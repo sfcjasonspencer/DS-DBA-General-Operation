@@ -1,0 +1,12 @@
+USE [frodo_production]
+
+GO
+
+CREATE CLUSTERED INDEX [cl_hx_JobEngine_JobTypeText_JobDataID] ON [dbo].[hx_JobEngine_JobTypeText]
+(
+	[JobDataID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = ON, DROP_EXISTING = OFF, ONLINE = ON, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, FILLFACTOR = 100)
+
+GO
+
+

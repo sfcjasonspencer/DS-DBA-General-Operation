@@ -1,0 +1,1 @@
+GRANT CONNECT ON ENDPOINT::[Mirroring] to [healthx\dsindqadb01sqlqdbsvc];

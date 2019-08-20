@@ -1,0 +1,2 @@
+SELECT * FROM [dbo].[HXAppLog] WITH (NOLOCK) WHERE [AddDateTime] = (SELECT MIN([AddDateTime]) FROM [dbo].[HXAppLog]) 
+SELECT * FROM [dbo].[HXAppLog] WITH (NOLOCK) WHERE [AddDateTime] = (SELECT MAX([AddDateTime]) FROM [dbo].[HXAppLog]) 
